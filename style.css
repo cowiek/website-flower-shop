@@ -7,38 +7,38 @@ body {
 }
 
 .logo{
-  width: 700px;
-  border-radius: 50px;
+  width: 30%;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
 }
 
 
 .main-nav ul {
   list-style: none;
   padding: 0;
-  margin: 20px auto;
+  margin: 3% auto;
   display: flex;
   justify-content: center;
-  gap: 30px; /* space between menu items */
-  margin-top: 30px;
-  margin-bottom: 25px;
+  gap: 2em;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #333;
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 0.1em 0.1em;
   transition: background 0.3s, color 0.3s;
 }
 
 .main-nav a:hover {
   background: #656263;
   color: white;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 h1 {
