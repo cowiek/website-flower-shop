@@ -1,18 +1,167 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff8f0; /* soft cream background */
-  color: #4a3c31; /* dark brown text */
-  margin: 20px;
+  background-color: #fffdd0; /* soft cream background */
+  margin: 0;
+  padding: 0;
+
+}
+
+.logo{
+  width: 700px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* space between menu items */
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  background: #656263;
+  color: white;
+  border-radius: 8px;
 }
 
 h1 {
-  color: #d95d39; /* warm coral */
+  font-size: 3em;
+  color: #ebe4e4;
   text-align: center;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 70px;
-  line-height: 1.5;
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 80px;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px; /* space between image and text */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.content-text {
   max-width: 600px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: column; /* stack vertically on smaller screens */
+  gap: 15px;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Optional: side-by-side layout if you want the 3 images in a row */
+@media (min-width: 768px) {
+  .image-gallery {
+    flex-direction: row;
+  }
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-list {
+  max-width: 600px;
+  font-size: 2em;
+  color: #333;
+}
+
+.contact-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer,
+.footer-box {
+  background-color: #444;     /* dark grey background */
+  color: #fff;                /* white text */
+  text-align: center;         /* center the text */
+  padding: 10px 5px;         /* space around the text */
+  font-size: 1.1em;
+}
+
+a {
+  color: #181717;             /* white text */
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a i {
+  margin-right: 8px;
+  color: #E1306C;          /* Instagram pink */
+}
+
+.top-box {
+  background-color: #444; /* warm brown */
+  padding: 30px 20px;
+  color: white;
+}
+
+.custom-line {
+  border: none;
+  height: 1.5px;
+  background-color: #444; /* or any color you want */
   margin: 10px auto;
+  width: 99%; /* or 100% if you want it full-width */
+  box-shadow: 0 4px 6px rgba(0, 0.5, 0, 0.5);
 }
