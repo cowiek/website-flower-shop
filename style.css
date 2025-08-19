@@ -7,13 +7,12 @@ body {
 }
 
 .logo{
-  width: 30%;
+  width: 20%;
   max-width: 700px;
   display: block;
   margin: 0 auto;
   margin-bottom: 3%;
 }
-
 
 .main-nav ul {
   list-style: none;
@@ -21,6 +20,7 @@ body {
   margin: 3% auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2em;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
@@ -40,6 +40,60 @@ body {
   color: white;
   border-radius: 2px;
 }
+
+.custom-line {
+  border: none;
+  height: 1.5px;
+  background-color: #444;
+  margin: 10px auto;
+  width: 99%; 
+  box-shadow: 0 4px 6px rgba(0, 0.5, 0, 0.5);
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 1366px) {
+  .main-nav ul {
+    gap: 1em;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+  }
+}
+
+/* Standardowe duże monitory (FullHD i większe) */
+@media (min-width: 1920px) {
+  .main-nav a {
+    font-size: 1.3em;
+    padding: 0.2em 0.5em;
+  }
+  .main-nav ul {
+    gap: 2.5em;
+  }
+}
+
+/* QHD monitory (2560px i więcej) */
+@media (min-width: 2560px) {
+  .main-nav a {
+    font-size: 1.5em;  /* jeszcze większy tekst */
+    padding: 0.3em 0.6em;
+  }
+  .main-nav ul {
+    gap: 3em;
+  }
+}
+
+/* Ultraszerokie monitory 3440px+ */
+@media (min-width: 3440px) {
+  .main-nav a {
+    font-size: 1.7em;
+    padding: 0.4em 0.8em;
+  }
+  .main-nav ul {
+    gap: 3.5em;
+  }
+}
+
 
 h1 {
   font-size: 3em;
@@ -62,45 +116,34 @@ h2 {
 .content-section {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
-  padding: 40px;
-  gap: 40px; /* space between image and text */
-  max-width: 1200px;
+  padding: 2.5rem;
+  gap: 2.5rem; /* space between image and text */
+  max-width: 75rem;
   margin: 0 auto;
 }
 
-.content-image {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
 .content-text {
-  max-width: 600px;
+  max-width: 37.5rem;
   font-size: 1.5em;
   color: #333;
 }
 
 .image-gallery {
   display: flex;
-  flex-direction: column; /* stack vertically on smaller screens */
-  gap: 15px;
+  flex-direction: row;
+  gap: 0.94rem;
+  flex-shrink: 0;
 }
 
 .image-gallery img {
-  width: 300px;
+  width: 100%;
+  max-width: 18.75rem;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: cover;
-}
-
-/* Optional: side-by-side layout if you want the 3 images in a row */
-@media (min-width: 768px) {
-  .image-gallery {
-    flex-direction: row;
-  }
 }
 
 .contact-section {
@@ -155,13 +198,4 @@ a i {
   background-color: #444; /* warm brown */
   padding: 30px 20px;
   color: white;
-}
-
-.custom-line {
-  border: none;
-  height: 1.5px;
-  background-color: #444; /* or any color you want */
-  margin: 10px auto;
-  width: 99%; /* or 100% if you want it full-width */
-  box-shadow: 0 4px 6px rgba(0, 0.5, 0, 0.5);
 }
